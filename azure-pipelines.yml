@@ -24,4 +24,4 @@ steps:
     serviceConnectionEndpoint: 'Snyk Scan'
     testType: 'code'
     monitorWhen: 'always'
-    failOnIssues: false
+    failOnIssues: true
