@@ -17,7 +17,7 @@ steps:
 
 - script: |
     
-  npm install snyk -g.
+    npm install snyk -g.
     
     
   displayName: 'npm install and build'
