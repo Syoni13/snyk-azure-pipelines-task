@@ -24,7 +24,7 @@ steps:
     
 #- script: snyk config set endpoint=https://api.eu.snyk.io
 #- script: snyk config set endpoint=https://api.au.snyk.io
-- script : snyk auth
+
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'SNYKSCAN'
