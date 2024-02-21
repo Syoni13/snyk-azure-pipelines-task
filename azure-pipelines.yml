@@ -26,6 +26,5 @@ steps:
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'Snyk'
-    testType: 'app'
-    monitorWhen: 'always'
+    testType: 'code'
     failOnIssues: true
