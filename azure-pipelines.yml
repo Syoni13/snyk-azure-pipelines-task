@@ -27,7 +27,7 @@ steps:
 - script : snyk auth
 - task: SnykSecurityScan@1
   inputs:
-    serviceConnectionEndpoint: 'Snyk Scan'
+    serviceConnectionEndpoint: 'SNYKSCAN'
     testType: 'app'
     monitorWhen: 'always'
     failOnIssues: true
