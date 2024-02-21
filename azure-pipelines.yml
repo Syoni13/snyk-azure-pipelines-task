@@ -18,9 +18,11 @@ steps:
 - script: |
     npm install
     npm run build
+    snyk auth
   displayName: 'npm install and build'
-- script: snyk config set endpoint=https://api.eu.snyk.io
-- script: snyk config set endpoint=https://api.au.snyk.io
+    
+#- script: snyk config set endpoint=https://api.eu.snyk.io
+#- script: snyk config set endpoint=https://api.au.snyk.io
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'Snyk Scan'
