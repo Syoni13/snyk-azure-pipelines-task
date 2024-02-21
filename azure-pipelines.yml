@@ -19,7 +19,8 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-
+- script: snyk config set endpoint=https://api.eu.snyk.io
+- script: snyk config set endpoint=https://api.au.snyk.io
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'Snyk Scan'
